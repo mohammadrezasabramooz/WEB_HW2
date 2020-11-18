@@ -1,32 +1,98 @@
-.navbar {
-    min-height: 80px;
-    background-color: cornflowerblue;
+html * {
+    font-size: 1em !important;
+    font-family: Sahel !important;
 }
 
-.navbar-brand {
-    padding: 0 15px;
-    height: 80px;
-    line-height: 80px;
-    background-position: right;
+#nav-container {
+    background-color: rgb(231, 239, 248);
+    flex-wrap: nowrap;
 }
 
-.navbar-toggle {
-    /* (80px - button height 34px) / 2 = 23px */
-    margin-top: 23px;
-    padding: 9px 10px !important;
+.logo-img {
+    height: 100px;
+    width: 100px;
+    flex-wrap: nowrap;
 }
 
+.container-fluid {
+    width: 100%;
+    flex-wrap: nowrap;
 
-/* @media (min-width: 768px) {
-    .navbar-nav>li>a {
-        /* (80px - line-height of 27px) / 2 = 26.5px */
-
-
-/* padding-top: 26.5px;
-padding-bottom: 26.5px;
-line-height: 27px;
 
 }
+#menu{
+    color : white;
 
 }
-*/
+#login-btn {
+    /*background-color: white; !* Green *!*/
+    /*background-color: white;*/
+    color: black;
+    border: 3px solid #067cb5;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#login-btn:hover {
+    background-color: #008CBA;
+    color: white;
+}
+#reg-btn {
+    background-color: #006aaa; /* Green */
+    border: 3px solid #067cb5;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#reg-btn:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    /*transition: all 0.5s ease;*/
+}
+
+.nav{
+    flex-wrap: wrap;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 300px;
+    width: 0px;
+    height: 100%;
+    color: white;
+    margin-right: -300px;
+    overflow-y: auto;
+    background: #006aaa;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper {
+    padding-right: 300px;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+}
