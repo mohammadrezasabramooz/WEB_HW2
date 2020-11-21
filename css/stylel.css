@@ -20,6 +20,7 @@ html * {
 
 
 }
+
 #first_menu{
     font-weight: bold;
 }
@@ -40,7 +41,7 @@ html * {
     padding-top: 40px;
     padding-right: 40px;
     direction: rtl;
-    row-gap: 30px;
+    grid-row-gap: 30px;
 }
 #menu{
     color : white;
