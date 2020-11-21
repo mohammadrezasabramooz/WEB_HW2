@@ -1,5 +1,5 @@
 html * {
-    font-size: 1em !important;
+
     font-family: Sahel !important;
 }
 
@@ -20,9 +20,34 @@ html * {
 
 
 }
+#first_menu{
+    font-weight: bold;
+}
+
+
+#night-mode{
+    padding-right: 20px;
+}
+.menu-header{
+    font-weight: bold;
+    padding-right: 20px;
+}
+#container-sidebar{
+    /*position: center;*/
+
+}
+#first_container{
+    padding-top: 40px;
+    padding-right: 40px;
+    direction: rtl;
+    row-gap: 30px;
+}
 #menu{
     color : white;
 
+}
+.list-item{
+    padding-right: 40px;
 }
 #login-btn {
     /*background-color: white; !* Green *!*/
@@ -95,4 +120,64 @@ html * {
 
 #sidebar-wrapper {
     width: 250px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    float:left;
+    /*padding-right: 30px;*/
+}
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    height: 15px;
+    width: 38px;
+    top: 8px;
+    left: 0;
+    right: 80px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input.primary:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
