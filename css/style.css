@@ -1,12 +1,14 @@
 html * {
 
     font-family: Sahel !important;
+
 }
 
 #nav-container {
     background-color: rgb(231, 239, 248);
     flex-wrap: nowrap;
 }
+
 
 .logo-img {
     height: 100px;
@@ -17,8 +19,17 @@ html * {
 .container-fluid {
     width: 100%;
     flex-wrap: nowrap;
+    position: -ms-device-fixed;
 
 
+}
+@media all and (max-width: 600px) {
+    div containter ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center;
+    }
 }
 
 #first_menu{
