@@ -4,6 +4,11 @@ html * {
 
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+    filter: invert(1) hue-rotate(180deg);
+}
 #nav-container {
     background-color: rgb(231, 239, 248);
     flex-wrap: nowrap;
