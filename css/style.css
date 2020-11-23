@@ -4,6 +4,11 @@ html * {
 
 }
 
+body{
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+}
+
 .dark-mode {
     background-color: black;
     color: white;
@@ -11,27 +16,29 @@ html * {
     height: 100%;
 }
 #nav-container {
-    background-color: rgb(231, 239, 248);
-    /*flex-wrap: nowrap;*/
-    position: fixed;
+
     /*alignment: center;*/
 
+}
+.navbar{
+    background-color: rgb(231, 239, 248);
+    /*flex-wrap: nowrap;*/
+    /*height: auto;*/
+    width: 100%;
+    position: fixed;
 }
 
 
 .logo-img {
     height: 100px;
     width: 100px;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;*/
 }
 
-.container-fluid {
-    width: 100%;
-
-}
 @media only screen and (max-width: 600px) {
-    #nav-container{
+   .navbar{
         height: 100px;
+       /*margin: auto;*/
     }
     #reg-btn {
         display: none;
@@ -44,8 +51,7 @@ html * {
     }
 
     #logo-flex{
-        padding: 0;
-        margin-top: -55px;
+        /*padding-top: -55px;*/
     }
     #wrapper{
         visibility: hidden;
@@ -55,11 +61,18 @@ html * {
         width: 200px;
         background-color: #008CBA;
     }
+    #sidebar-wrapper{
+        left: 300px;
+        right: 0;
+    }
 
 }
-
+#homepage{
+    row-gap: 100px;
+}
 #first_menu{
     font-weight: bold;
+    list-style: none;
 }
 
 
@@ -74,11 +87,18 @@ html * {
     padding-top: 40px;
     padding-right: 40px;
     direction: rtl;
+    height: auto;
     grid-row-gap: 30px;
 }
-#menu{
-    color : white;
 
+.sidebar-brand{
+    direction: rtl;
+}
+#page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    /*position: absolute;*/
+    padding: 15px;
 }
 .list-item{
     padding-right: 40px;
@@ -96,6 +116,20 @@ html * {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+#menu{
+    background-color: #006aaa; /* Green */
+    border: 3px solid #067cb5;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-flex;*/
+    /*flex-wrap: nowrap;*/
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    visibility: hidden;
 }
 #login-btn:hover {
     background-color: #008CBA;
@@ -122,42 +156,63 @@ html * {
 
 #wrapper {
     padding-left: 0;
-    position: relative;
+    position: fixed;
+    height: 100%;
+
 }
 
 .nav{
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    width: 100%;
+    position: fixed;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     right: 300px;
-    height: 110%;
+    /*height: 100%;*/
     width: 0;
-    margin-top:initial;
+    /*margin-top: inherit;*/
     color: white;
     margin-right: -300px;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     background: #006aaa;
     display: inline-block;
-    /*-webkit-transition: all 0.5s ease;*/
-    /*-moz-transition: all 0.5s ease;*/
-    /*-o-transition: all 0.5s ease;*/
-    /*transition: all 0.5s ease;*/
 }
 
 #wrapper {
     padding-right: 300px;
     position: fixed;
 }
+.sidebar-nav {
+    direction: rtl;
+    padding: 40px;
+    text-align: right;
 
-#wrapper-container{
+}
+.sidebar-brand {
+    list-style: none;
+    /*text-decoration: none;*/
+    font-weight: bold;
 
+}
+.sidebar-brand div{
+    /*text-indent: 40px;*/
+    line-break: normal;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+#team_member li{
+    text-indent: 20px;
 }
 
 #sidebar-wrapper {
     width: 300px;
+    height: 100%;
+    direction: rtl;
 }
 .switch {
     position: relative;
@@ -222,23 +277,27 @@ input:checked + .slider:before {
 /*Grid style*/
 
 .grid-container {
+
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-row-gap: 20px;
-    height: 100%;
-    grid-column-gap : -100px;
-    padding-left: 0px;
+    height: auto;
+    /*width: auto;*/
+    width: auto;
+    /*margin-right: 100px;*/
+    margin-right: 100px;
+    padding: 20px;
+    /*height: 100%;*/
+    /*grid-column-gap : 10px;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 #grid {
     background-color: white;
-    /*overflow-y: scroll;*/
-    /*display: inline-block;*/
 }
 .grid-container > div {
-    /*display: grid;*/
-    /*overflow: auto;*/
-    height: 340px;
-    width:340px;
+    height: 300px ;
+    width : 300px;
     font-size: 30px;
 
 }
