@@ -1,6 +1,6 @@
 html * {
 
-    font-family: Sahel !important;
+    font-family: Sahel, serif !important;
 
 }
 
@@ -31,7 +31,7 @@ html * {
 
 /*}*/
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     #nav-container {
         height: 100px;
     }
@@ -57,12 +57,19 @@ html * {
         visibility: hidden;
     }
 
+    .table-container {
+        display: none;
+    }
+
     .grid-container > div {
         height: 200px;
         width: 200px;
         background-color: #008CBA;
     }
 
+    .idk {
+        display: flex;
+    }
 }
 
 #first_menu {
@@ -265,9 +272,7 @@ input:checked + .slider:before {
 }
 
 .table-container {
-    width: 100%;
-    height: 80%;
-    position: absolute;
+
 }
 
 .table-header {
@@ -276,4 +281,14 @@ input:checked + .slider:before {
 
 .table-even {
     background-color: rgb(231, 239, 248);
+}
+
+.idk {
+    font-size: 20px;
+}
+
+@media (min-width: 599.98px) {
+    .idk{
+        display: none;
+    }
 }
