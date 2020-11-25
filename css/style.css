@@ -275,8 +275,27 @@ input:checked + .slider:before {
         width: 250px;
     }
 
+
 }
 
 #test-wrapper {
     background-color: aqua;
+}
+/*footer navigation*/
+#buttonGroup {
+    background-color: #008CBA;
+}
+.selectors button {
+    background-color: rgb(231, 239, 248);
+    height: 60px;
+    color: #006aaa;
+}
+
+@media (min-width: 600px) {
+    .footer{
+        visibility: hidden;
+    }
+    #cancell {
+        visibility: hidden;
+    }
 }
